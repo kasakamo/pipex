@@ -6,7 +6,7 @@
 #    By: kasakamo <kasakamo@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/15 18:07:46 by kasakamo          #+#    #+#              #
-#    Updated: 2025/09/16 16:39:00 by kasakamo         ###   ########.fr        #
+#    Updated: 2025/09/18 20:40:25 by kasakamo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror -Ilibft
 
 SRC = main.c child.c path.c ft_free_split.c
-OBJ = $(SRC:.C=.O)
+OBJ = $(SRC:.c=.o)
 LIBFT_DIR = ./libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
