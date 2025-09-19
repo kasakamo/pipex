@@ -6,7 +6,7 @@
 /*   By: kasakamo <kasakamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 22:02:53 by kasakamo          #+#    #+#             */
-/*   Updated: 2025/09/18 23:50:30 by kasakamo         ###   ########.fr       */
+/*   Updated: 2025/09/19 20:14:08 by kasakamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void	child2(int *pipefd, char **av, char **envp)
 	fd = open(av[4], O_WRONLY | O_CREAT | O_TRUNC, 0644);
 	if (fd < 0)
 	{
-		perror("open infile\n");
+		perror("open outfile");
 		exit (1);
 	}
 	dup2(pipefd[0], STDIN_FILENO);
