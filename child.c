@@ -6,7 +6,7 @@
 /*   By: kasakamo <kasakamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 22:02:53 by kasakamo          #+#    #+#             */
-/*   Updated: 2025/09/19 20:14:08 by kasakamo         ###   ########.fr       */
+/*   Updated: 2025/10/12 19:34:42 by kasakamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	exec_child(char *cmd_str, char **envp)
 	execve(cmd_path, cmd, envp);
 	perror("execve");
 	ft_free_split(cmd);
-	exit (1);
+	exit (127);
 }
 
 void	child1(int *pipefd, char **av, char **envp)
