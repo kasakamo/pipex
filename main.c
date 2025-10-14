@@ -6,7 +6,7 @@
 /*   By: kasakamo <kasakamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 20:13:41 by kasakamo          #+#    #+#             */
-/*   Updated: 2025/10/14 19:17:16 by kasakamo         ###   ########.fr       */
+/*   Updated: 2025/10/14 19:35:21 by kasakamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main(int ac, char **av, char **envp)
 	int		status;
 
 	if (ac != 5)
-		return (fprintf(stderr, "Usage: %s file1 cmd1 cmd2 file2\n", av[0]), 1);
+		return (ft_putstr_fd("Usage: ./pipex file1 cmd1 cmd2 file2\n", 2), 1);
 	if (pipe(pipefd) == -1)
 		return (perror("pipe"), 1);
 	pid1 = fork();
