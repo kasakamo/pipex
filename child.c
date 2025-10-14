@@ -6,7 +6,7 @@
 /*   By: kasakamo <kasakamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 22:02:53 by kasakamo          #+#    #+#             */
-/*   Updated: 2025/10/14 19:22:22 by kasakamo         ###   ########.fr       */
+/*   Updated: 2025/10/14 20:41:45 by kasakamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ char	*resolve_path(char *cmd_name, char **envp)
 	char	*path;
 
 	if (ft_strchr(cmd_name, '/'))
-	path = cmd_name;
+		path = cmd_name;
 	else
-	path = get_cmd_path(cmd_name, envp);
+		path = get_cmd_path(cmd_name, envp);
 	if (!path)
 	{
 		ft_putendl_fd("command not found", 2);
