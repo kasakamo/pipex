@@ -6,7 +6,7 @@
 #    By: kasakamo <kasakamo@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/15 18:07:46 by kasakamo          #+#    #+#              #
-#    Updated: 2025/09/18 20:40:25 by kasakamo         ###   ########.fr        #
+#    Updated: 2025/10/14 21:37:30 by kasakamo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = pipex
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -Ilibft
 
-SRC = main.c child.c path.c ft_free_split.c
+SRC = main.c child.c path.c free.c
 OBJ = $(SRC:.c=.o)
 LIBFT_DIR = ./libft
 LIBFT = $(LIBFT_DIR)/libft.a

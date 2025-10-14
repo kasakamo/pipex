@@ -6,7 +6,7 @@
 /*   By: kasakamo <kasakamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 21:47:16 by kasakamo          #+#    #+#             */
-/*   Updated: 2025/10/14 20:35:42 by kasakamo         ###   ########.fr       */
+/*   Updated: 2025/10/14 21:55:21 by kasakamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,11 @@ void	child1(int *pipefd, char **av, char **envp);
 void	child2(int *pipefd, char **av, char **envp);
 void	exec_child(char *cmd_str, char **envp);
 char	**parse_cmd(char *cmd_str);
-char	*resolve_path(char *cmd_name, char **envp);
+char	*resolve_path(char **cmd, char *cmd_name, char **envp);
 
 char	*get_cmd_path(char *cmd, char **envp);
 
 void	ft_free_split(char **arr);
+void	free_exit(char **cmd, char *msg, int code);
 
 #endif
